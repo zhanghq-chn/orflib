@@ -1,0 +1,42 @@
+# OS
+.DS_Store
+
+# IDE / editor
+.vscode
+.cursorrule
+.vs
+*.user
+
+# Build artifacts
+*.d
+*.o
+*.obj
+*.slo
+*.lo
+*.gch
+*.pch
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.pyd
+*.pdb
+*.exe
+*.out
+*.app
+
+# Python
+__pycache__/
+*egg-info/
+.ipynb_checkpoints/
+*.whl
+
+# Project build output
+build/
+bin/
+lib/

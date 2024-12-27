@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="include\xlw\Singleton.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfAbstractCmdDesc.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\ArgList.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\CellMatrix.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\CellMatrixPimpl.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\CellValue.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\CriticalSection.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\DoubleOrNothing.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\eshared_ptr.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\eshared_ptr_details.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\EXCEL32_API.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\HiResTimer.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\IXlfoperShared.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\macros.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\MJCellMatrix.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\MyContainers.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\NCmatrices.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\PascalStringConversions.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\TempMemory.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\ThreadLocalStorage.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\Win32StreamBuf.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlarray.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlcall32.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfArgDesc.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfArgDescList.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfCmdDesc.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfExcel.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfException.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfFuncDesc.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfOper.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfOper4.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfOper12.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfOperImpl.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfOperProperties.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfRef.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfServices.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlFunctionRegistration.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlfWindows.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\XlOpenClose.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlw.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlwManaged.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlwshared_ptr.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xlw\xlwshared_ptr_details.h">
+      <Filter>include\xlw</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e4291126-ee3e-47ec-818a-9ba95ccf06d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{3c7a632b-d47c-42e7-bd0c-546ebf84bf52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\xlw">
+      <UniqueIdentifier>{06973512-34d5-44d3-9a07-3e58cc014201}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ArgList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DoubleOrNothing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HiResTimer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MJCellMatrix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NCmatrices.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PascalStringConversions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathUpdater.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TempMemory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Win32StreamBuf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xlcall.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfAbstractCmdDesc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfArgDesc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfArgDescList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfCmdDesc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfExcel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfFuncDesc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfOperImpl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfOperProperties.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfRef.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlfServices.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlFunctionRegistration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XlOpenClose.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\xlw\Win32StreamBuf.inl">
+      <Filter>include\xlw</Filter>
+    </None>
+    <None Include="include\xlw\XlfOperProperties4.inl">
+      <Filter>include\xlw</Filter>
+    </None>
+    <None Include="include\xlw\XlfOperProperties12.inl">
+      <Filter>include\xlw</Filter>
+    </None>
+    <None Include="include\xlw\XlfOperPropertiesDynamic.inl">
+      <Filter>include\xlw</Filter>
+    </None>
+    <None Include="include\xlw\XlfRef.inl">
+      <Filter>include\xlw</Filter>
+    </None>
+    <None Include="include\xlw\xlw.def">
+      <Filter>include\xlw</Filter>
+    </None>
+  </ItemGroup>
+</Project>

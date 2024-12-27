@@ -1,0 +1,114 @@
+﻿{
+  "configurations": [
+    {
+      "name": "msvc-x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x64",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "msvc-x64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x64",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "msvc-x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x86",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "msvc-x86-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x86",
+          "type": "STRING"
+        }
+      ]
+    },
+    {
+      "name": "mingw64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "mingw_64" ],
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x64",
+          "type": "STRING"
+        }
+      ],
+      "intelliSenseMode": "linux-gcc-x64"
+    },
+    {
+      "name": "mingw64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\build\\${name}",
+      "installRoot": "${projectDir}\\lib\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "mingw_64" ],
+      "variables": [
+        {
+          "name": "PLATFORM_TARGET",
+          "value": "x64",
+          "type": "STRING"
+        }
+      ],
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ]
+}

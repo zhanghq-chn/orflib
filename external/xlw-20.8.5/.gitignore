@@ -1,0 +1,6 @@
+.vs/
+.vscode/*
+!.vscode/cmake-variants.json
+build/
+bin/
+*.user
