@@ -16,6 +16,15 @@ elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
         set(NUMPY_INCLUDE_DIRECTORY ${PYTHON_HOME}/lib/python3.12/site-packages/numpy/core/include)
         set(PYTHON_LIBRARY_PATH ${PYTHON_HOME}/lib/libpython3.12.so)
     endif()
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")  # macOS
+    if(DEFINED ENV{CONDA_PREFIX})
+        set(PYTHON_HOME $ENV{CONDA_PREFIX})
+    else()
+        set(PYTHON_HOME $ENV{HOME}/miniconda3/envs/orf531)
+    endif()
+    set(PYTHON_INCLUDE_DIRECTORY ${PYTHON_HOME}/include/python3.12)
+    set(NUMPY_INCLUDE_DIRECTORY ${PYTHON_HOME}/lib/python3.12/site-packages/numpy/_core/include)
+    set(PYTHON_LIBRARY_PATH ${PYTHON_HOME}/lib/libpython3.12.dylib)
 endif()
 
 set(pyorflib_SOURCES
@@ -79,5 +88,15 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
         # /usr/lib/x86_64-linux-gnu/blas/libblas.a 
         # libgfortran.so.4 
         # libquadmath.so.0 
+    )
+elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+    # macOS: Python extension is .so; output next to orflib package
+    set_target_properties(pyorflib PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/orflib)
+    set_target_properties(pyorflib PROPERTIES PREFIX "" SUFFIX ".so")
+    # on macOS, python plugins are dynamically loaded, will crash if dylib is linked directly
+    set_target_properties(pyorflib PROPERTIES LINK_FLAGS "-undefined dynamic_lookup")
+    target_link_libraries(pyorflib PRIVATE 
+        ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/liborflib${CMAKE_DEBUG_POSTFIX}.a 
+        "-framework Accelerate"
     )
 endif()
